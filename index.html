@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<style type="text/css">
+		.boom{
+			width: 20px;
+			height: 20px;
+			border-radius: 50%; 
+			background-color: ; 
+		}
+		.blue {
+			background-color:;
+			display:;
+		}
+		.green {
+			background-color: green;
+		}
+		.red {
+			background-color: ;
+		}
+		.yellow {
+			background-color: ;
+		}
+		.end {
+			height: 100vh;
+			background-color: gray;
+			display: none;
+			position:fixed;
+			bottom: 0px;
+		}
+	</style>
+</head>
+<body style="background-image: url(kletki.jpg)">
+	<div class="col-7  mx-auto">
+		<div>
+			<h1 class="task">Морской Бой!</h1>
+			<h1 class="text-primary">Корабль с 4 клетками - 1</h1>
+			<h1 class="text-success">Корабль с 3 клетками - 2</h1>
+			<h1 class="text-danger">Корабль с 2 клетками - 3</h1>
+			<h1 class="text-warning">Корабль с 1 клетками - 4</h1>
+			<h1>Score: <span class="score">0</span></h1>
+		</div>
+		<!-- Дивы с нумерацией 1, 2, 3 и т.д. -->
+		<div class="row">
+			<div class="col-1 px-5 py-3   text-center border border-info">
+			</div>
+			<div class="col-1 px-5 py-3   text-center border border-info">
+				<h4>1</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border border-info">
+				<h4>2</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border border-info">
+				<h4>3</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border border-info">
+				<h4>4</h4>
+			</div>
+			<div class="col-1 px-5  py-3  text-center border border-info">
+				<h4>5</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border border-info">
+				<h4>6</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border border-info">
+				<h4>7</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border border-info">
+				<h4>8</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border border-info">
+				<h4>9</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border border-info">
+				<h4>10</h4>
+			</div>
+		</div>
+		<!--Линия А-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  text-center border border-info">
+				<h4>A</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info " >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border  border-info blue">
+				<div class=""></div>
+			</div>
+			<div class="col-1 px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom" ></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+		</div>
+		<!--Линия B-->
+		<div class="row">
+			<div class="col-1  px-5 py-4  text-center border border-info">
+				<h4>B</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom" ></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border  border-info blue">
+				<div></div>
+			</div>
+			<div class="col-1 px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+		</div>
+		<!--Линия C-->
+		<div class="row">
+			<div class="col-1 px-5 py-4 text-center border border-info">
+				<h4>C</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border  border-info blue">
+				<div class=""></div>
+			</div>
+			<div class="col-1 px-5 py-4 bg border yellow border-info">
+				<div class=""></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+		</div>
+		<!--Линия D-->
+		<div class="row">
+			<div class="col-1 px-5 py-4 text-center border border-info">
+				<h4>D</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border border-info blue">
+				<div class=""></div>
+			</div>
+			<div class="col-1 px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+		</div>
+		<!--Линия E-->
+		<div class="row">
+			<div class="col-1 px-5 py-4 text-center border border-info">
+				<h4>E</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1 px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+		</div>
+		<!--Линия F-->
+		<div class="row">
+			<div class="col-1 px-5 py-4 text-center border border-info">
+				<h4>F</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1 px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 px-5 py-4 text-center border border-info">
+				<h4>G</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border yellow border-info">
+				<div class=""></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1 px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 px-5 py-4 text-center border border-info">
+				<h4>H</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom" ></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div  class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div  class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div  class="boom"></div>
+			</div>
+			<div class="col-1 px-5 py-4 bg border bang border-info">
+				<div  class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div  class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div  class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div  class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div  class="boom"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 px-5 py-4 text-center border border-info">
+				<h4>I</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border yellow border-info">
+				<div class=""></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1 px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"> </div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 px-5 py-4 text-center border border-info">
+				<h4>J</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1 px-5 py-4 bg border bang border-info">
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang border-info" >
+				<div class="boom"></div>
+			</div>
+			<div class="col-1  px-5 py-4 bg border  bang border-info" >
+				<div class="boom"></div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 end" style=""></div>
+<script type="text/javascript">
+	let score = document.querySelector('.score')
+	score1 = 0 
+	let boom = document.querySelectorAll('.boom') 
+	let bang = document.querySelectorAll('.bang')
+	let blue = document.querySelectorAll('.blue')
+	let yellow = document.querySelectorAll('.yellow')
+	let end = document.querySelector('.end')
+		for(let i=0; i<3; i=i+1) {
+			yellow[i].onclick = function() {
+				score1 = score1 + 4
+				yellow[i].style.backgroundColor = "yellow"
+				score.innerHTML = score1
+				if (score1==16) {
+					end.style.display = "block"
+					alert('Ура, победа')
+					
+				}
+			}
+		}
+		for(let i=0; i<4; i=i+1) {
+			blue[i].onclick = function() {
+				score1 = score1 + 1
+				blue[i].style.backgroundColor = "blue"
+				score.innerHTML = score1
+				if (score1==16) {
+					end.style.display = "block"
+					alert('Ура, победа')
+				}
+			}
+		}
+		for(let i=0; i<93; i=i+1) {
+			bang[i].onclick = function() {
+				boom[i].style.backgroundColor = "red"
+				
+				
+			}
+		}
+
+</script>
+</body>
+</html>
